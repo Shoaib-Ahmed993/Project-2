@@ -29,10 +29,8 @@ jobs:
         with: 
           node-version: 12
 
-      - name: GitHub Action for Yarn
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
+      - name: NPM Publish
+        uses: JS-DevTools/npm-publish@v1
           
       - name: creating build
         run: npm run build
